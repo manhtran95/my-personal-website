@@ -1,0 +1,157 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	//background: red;
+	// background-image: url("/1.jpg");
+}
+
+
+
+
+
+#welcome	 {
+	//border-top: 2px solid lightgrey;
+	margin-top:50px;
+	margin-bottom:50px;
+	font-size: 2em;
+	letter-spacing: 0.2px;
+	word-spacing: 2px;
+	color:orange;
+	text-align:center;
+	font-style:italic;
+	font-family: 
+	Georgia, serif	
+	;}
+
+	#write_new_article {
+		text-align: center;
+		font-size: 2em;
+		margin: 30px
+	}
+/*
+
+ INDEX  INDEX  INDEX
+
+ */
+
+ #article {
+ 	width: 750px;
+ 	height: 200px;
+ 	border-top: 1.5px solid lightgrey;	
+ }
+
+ #title_container {
+ 	display: block;
+	//background-color: yellow;
+}
+
+#title{
+	margin-top:17px;
+	margin-bottom:17px;
+	display:inline-block;
+	//background:red;
+	font-size:120%;
+	text-align:center;
+	color: brown;
+}
+
+#edit {
+	float: right;
+	margin:5px;
+	margin-top:10px;
+
+	//background: red;
+}
+
+#delete_image {
+	//background: red;
+	float: right;
+	margin:4px;
+	margin-top:8px;
+}
+
+#figure {
+	//width:120px;
+	//height:120px;
+	>img {
+ border: 3px solid;
+ border-color: orange;
+}
+    	margin-left: 30px;
+	float:left;
+	margin-right: 10px;
+
+}
+
+#text_container {
+	a:link {     text-decoration: none; }
+	a:visited {     text-decoration: none; }
+	a:hover {     text-decoration: underline; }
+	a:active {     text-decoration: underline; }
+	//position:absolute;
+	margin-right:100px;
+	//background:lightcyan;
+	display: block;
+	width:500px;
+	overflow:hidden;
+}
+
+
+#text{
+
+	font-style:justify;
+	// padding-left:20px;
+	// padding-right:20px;
+	// padding-bottom:10px;
+	//background:red;
+	//height:35px;
+	text-align:justify;
+	overflow:hidden;
+	display: block;
+	height:90px;
+	line-height: 20px;
+
+}
+
+#continueReading{
+	text-decoration: none;
+	margin-bottom:0px;
+	display: block;
+	position: absolute;
+	//background-color: red;
+}
+
+#seperator {
+	height: 10px;
+	//background-color: red;
+}
+
+/* 
+
+SHOW SHOW SHOW
+
+*/
+
+
+
+
+
+a:link {     text-decoration: none; }
+a:visited {     text-decoration: none; }
+a:hover {     text-decoration: underline; }
+a:active {     text-decoration: underline; }
+
+
+
+.italic {
+	font-style: italic;
+}
+
+.serif {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.sansserif {
+	font-family: Arial, Helvetica, sans-serif;
+}

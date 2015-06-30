@@ -1,0 +1,90 @@
+
+
+<% if session[:log_in]==true %>
+<div id="write_new_article">
+<%= link_to 'Write a new note', new_article_path %>
+</div>
+<% else %>
+<h1 id="welcome">Warmest welcome to my personal blog!</h1>
+
+<% end %>
+
+<div id="articles">
+  <% @articles.each do |article| %> 
+
+  <center>  
+    <div id="article" class="outset">
+
+      <div id="title_container">
+        <a id="title"   href= "<%=article_path(article) %>"    
+          class="italic">
+          <%= article.title %>
+        </a>
+
+        <% if session[:log_in]==true %>
+
+        <div id="delete_image"> 
+          <%= link_to article_path(article), method: :delete, data: {confirm: 'Are you sure?'} do %>
+          <%= image_tag("delete2.png", size: "20x20") %>
+          <% end %>
+        </div>
+
+        <a href= "<%= edit_article_path(article) %>">
+          <div id="edit">
+            <img src="/edit.png" alt="Edit Icon" style="width:20px;height:20px">
+          </div>
+        </a>
+
+        <% end %>
+      </div>
+
+      <div id="figure">
+        <img src="/fb.jpg" alt="Test Icon" style="width:110px;height:110px">
+      </div> 
+
+      <div id="text_container" >
+
+
+        <div id="text">
+          <%= article.description.html_safe %>
+
+        </div>
+        <a href= "<%=article_path(article) %>"  id="continueReading">
+          Continue Reading...
+        </a>
+
+      </div> 
+
+    </div>
+  </center>
+
+
+  <div id="seperator">     
+  </div>
+
+  <% end %>
+</div>
+
+<!-- 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="3"></th>
+  </tr>
+
+  <% @articles.each do |article| %>
+  <tr>
+    <td><%= article.title %></td>
+    <td><%= article.text %></td>
+    <td><%= link_to 'Show', article_path(article) %></td>
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article_path(article),
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </table>
+
+  <%= link_to 'New article', new_article_path %><br>  -->  
+

@@ -1,0 +1,43 @@
+
+<div id="containerS">
+	<center>
+		<div id="title_container">
+			<h1 id="titleS">
+				<strong> 
+					<%= @article.title %>
+				</strong>
+			</h1>
+
+			<% if session[:log_in]==true %>
+			<a href= "<%= edit_article_path(@article) %>">
+				<div id="editS">
+					<img src="/edit.png" alt="Edit Icon" style="width:30px;height:30px">
+				</div>
+			</a>
+			<% end %>
+		</div>
+	</center>
+
+	<p id="bodyS">
+<!-- 
+		<div id="figure">
+			<img src="/fb.jpg" alt="Test Icon" style="width:100px;height:100px">
+		</div> -->
+
+		<p id="textS">
+			<%= @article.text.html_safe %>
+		</p>
+	</p>
+
+	<h2 id="all_comments">All Comments</h2>
+	<h3 id="all_articles">
+		<%= link_to 'back to All Notes', articles_path %>
+	</h3>
+	<%= render @article.comments %>
+
+	<%= render 'comments/form' %>
+
+	<h3 id="all_articles_bottom">
+		<%= link_to 'back to All Notes', articles_path %>
+	</h3>
+</div>

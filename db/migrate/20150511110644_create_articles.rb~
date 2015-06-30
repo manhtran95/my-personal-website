@@ -1,0 +1,15 @@
+class CreateArticles < ActiveRecord::Migration
+  def change
+    create_table :articles do |t|
+      t.string :title
+      t.text :text
+
+      t.timestamps null: false
+    end
+
+@article = Article.new(params[:article])
+ 
+  @article.save
+  redirect_to @article
+  end
+end

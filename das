@@ -1,0 +1,40 @@
+=> [[32m#<User:0x00000005d7cc38[0m
+  id: [1;34m6[0m,
+  name: [31m[1;31m"[0m[31mabc[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mabc@fdfs.com[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mFri[0m, [1;34m29[0m [1;34;4mMay[0m [1;34m2015[0m [1;34m08[0m:[1;34m53[0m:[1;34m51[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mFri[0m, [1;34m29[0m [1;34;4mMay[0m [1;34m2015[0m [1;34m08[0m:[1;34m53[0m:[1;34m51[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$10$pchaLk1reFNS5MIRMkRBeeYIY92U0kml3rlL8SOY9mCnmqs7X43YO[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<User:0x00000005d7ca80[0m
+  id: [1;34m7[0m,
+  name: [31m[1;31m"[0m[31maaa[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31ma@a.a[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mMon[0m, [1;34m01[0m [1;34;4mJun[0m [1;34m2015[0m [1;34m07[0m:[1;34m43[0m:[1;34m41[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mMon[0m, [1;34m01[0m [1;34;4mJun[0m [1;34m2015[0m [1;34m07[0m:[1;34m43[0m:[1;34m41[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$10$4JQnYn0PHprREF.IXqh9q.A2/XJntzgTbPN4S4vnP/8FtSfe.rQb6[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<User:0x00000005d7c878[0m
+  id: [1;34m8[0m,
+  name: [31m[1;31m"[0m[31maaa2[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31ma@a.aa[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mMon[0m, [1;34m01[0m [1;34;4mJun[0m [1;34m2015[0m [1;34m10[0m:[1;34m06[0m:[1;34m49[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mMon[0m, [1;34m01[0m [1;34;4mJun[0m [1;34m2015[0m [1;34m10[0m:[1;34m06[0m:[1;34m49[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$10$Xz20R9/p17p3SIpERi17/.NjvDT3ks9F7i81w5uhEKUvRpA.k4UMK[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<User:0x00000005d7c5a8[0m
+  id: [1;34m9[0m,
+  name: [31m[1;31m"[0m[31mbbb[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mb@b.b[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mMon[0m, [1;34m01[0m [1;34;4mJun[0m [1;34m2015[0m [1;34m10[0m:[1;34m25[0m:[1;34m15[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mMon[0m, [1;34m01[0m [1;34;4mJun[0m [1;34m2015[0m [1;34m10[0m:[1;34m25[0m:[1;34m15[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$10$YbPEpOrQLmvbrJUB/vzbpujdEpTij40Cv.9PCMFYTLDpZGERva6eK[1;31m"[0m[31m[0m[32m>[0m,
+ [32m#<User:0x00000005d7c3a0[0m
+  id: [1;34m10[0m,
+  name: [31m[1;31m"[0m[31mccc[1;31m"[0m[31m[0m,
+  email: [31m[1;31m"[0m[31mc@c.c[1;31m"[0m[31m[0m,
+  created_at: [1;34;4mMon[0m, [1;34m01[0m [1;34;4mJun[0m [1;34m2015[0m [1;34m10[0m:[1;34m58[0m:[1;34m09[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  updated_at: [1;34;4mMon[0m, [1;34m01[0m [1;34;4mJun[0m [1;34m2015[0m [1;34m10[0m:[1;34m58[0m:[1;34m09[0m [1;34;4mUTC[0m [1;34m+00[0m:[1;34m00[0m,
+  password_digest:
+   [31m[1;31m"[0m[31m$2a$10$9lBhgOAHAjp9pkvXTjKuluMQ/2CmZ.ZP.VBrWz/tBb10CecxUWPEu[1;31m"[0m[31m[0m[32m>[0m]

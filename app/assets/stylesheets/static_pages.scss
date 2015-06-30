@@ -1,0 +1,41 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#figure {
+	float: left;
+	display: block;
+	//position: absolute;
+	padding-right: 30px;
+	//background: blue;
+	margin-bottom: 15px;
+}
+
+#about_para {
+	display: block;
+	//position: absolute;
+	width: 600px;
+	float: right;
+		background-color: seashell;
+
+}
+
+#about_title {
+	margin-bottom: 50px;
+}
+
+.brown {
+		 color:brown;
+
+}
+
+ul li {
+	margin-bottom: 10px;
+}
+
+ul {
+		margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px
+	//background-color: blue;
+}

@@ -1,0 +1,27 @@
+
+<div id="comment_container">
+
+	<div id="comment">
+		<%= comment.body %>
+	</div>
+
+	<div id="commenter">
+		<strong> <%= comment.commenter %> </strong>
+	</div>
+	<!-- <div style="clear:both"></div> -->
+
+</div>
+
+<% if session[:log_in]==true %>
+
+<div id="delete_comment"> 
+	<%= link_to [comment.article, comment], method: :delete, data: {confirm: 'Are you sure?'} do %>
+	<%= image_tag("delete2.png", size: "25x25") %>
+	<% end %>
+</div>
+<% end %>
+
+
+
+<div id="seperator">     
+</div>
