@@ -12,10 +12,6 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  resources :users
-  get 'signup'  => 'users#new'
-
-  get 'sessions/new'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'

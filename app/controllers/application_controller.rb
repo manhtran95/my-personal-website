@@ -4,10 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   include SessionsHelper
 
-def admin?
-  session[:password] == 'foobar'
-end
-
 def authorize_admin
 	# binding pry
     redirect_to root_path, alert: 'Access Denied' unless session[:log_in] == true
