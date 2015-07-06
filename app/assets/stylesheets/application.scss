@@ -36,6 +36,16 @@
  	padding-top: 10px;
  }
 
+.dropdown-menu {
+	min-width: 0;
+	li {
+		margin-bottom: 0;
+	}
+}
+
+a.dropdown-toggle {
+	height: 42px;
+}
 
  #header {
  	background-color: white;

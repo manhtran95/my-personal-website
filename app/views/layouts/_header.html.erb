@@ -1,5 +1,5 @@
-<header class="navbar navbar-fixed-top navbar-inverse" id="header">
-  <div class="container" id="header-container">
+<header class="navbar navbar-fixed-top navbar-inverse">
+<div class="container">
 
     <ul class="nav navbar-nav navbar-left">
      <li> <a href= "https://www.facebook.com/manh.tran.103">
@@ -10,37 +10,34 @@
       <img src="images/gm.png" alt="gm Icon" style="width:30px;height:30px">
     </a></li>
 
-     <li> <a href= "https://twitter.com/manhtran0811">
+    <li> <a href= "https://twitter.com/manhtran0811">
       <img src="images/tw.png" alt="tw Icon" style="width:30px;height:30px">
     </a></li>
-
   </ul>
- 
-  <nav>
-    <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-      <% if logged_in? %>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          Manh Tran <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
-          <li class="divider"></li>
-          <li>
-            <%= link_to "Log out", logout_path, method: "delete" %>
-          </li>
-        </ul>
-      </li>
-      <% else %>
-      <li><%= link_to "Log in", login_path %></li>
-      <% end %>
-    </ul>
-  </nav>
+
+  <ul class="nav navbar-nav navbar-right">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "About", about_path %></li>
+    <% if logged_in? %>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        Manh Tran <b class="caret"></b>
+      </a>
+      <ul class="dropdown-menu">
+        <li>
+          <%= link_to "Log out", logout_path, method: "delete" %>
+        </li>
+      </ul>
+    </li>
+    <% else %>
+    <li><%= link_to "Log in", login_path %></li>
+    <% end %>
+  </ul>
+
 </div>
 </header>
 
- <div id="sig"> <center>
+<div id="sig"> <center>
   <img src="images/sig.png" alt="sig Icon" style="height:160px ">
-  </center>
+</center>
 </div> 
