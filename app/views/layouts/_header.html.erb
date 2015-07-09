@@ -1,43 +1,53 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
+  <header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#D3D3D3">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
-    <ul class="nav navbar-nav navbar-left">
-     <li> <a href= "https://www.facebook.com/manh.tran.103">
-      <img src="images/fb.png" alt="Fb Icon" style="width:30px;height:30px">
-    </a> </li>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href= "https://www.facebook.com/manh.tran.103"><img src="images/fb.png" alt="Fb Icon" style="width:30px;height:30px"></a>
+        </li>
 
-    <li> <a href= "mailto:manhnus@gmail.com">
-      <img src="images/gm.png" alt="gm Icon" style="width:30px;height:30px">
-    </a></li>
+        <li> <a href= "mailto:manhnus@gmail.com">
+          <img src="images/gm.png" alt="gm Icon" style="width:30px;height:30px"></a>
+        </li>
 
-    <li> <a href= "https://twitter.com/manhtran0811">
-      <img src="images/tw.png" alt="tw Icon" style="width:30px;height:30px">
-    </a></li>
-  </ul>
-
-  <ul class="nav navbar-nav navbar-right">
-    <li><%= link_to "Home", root_path %></li>
-    <li><%= link_to "About", about_path %></li>
-    <% if logged_in? %>
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        Manh Tran <b class="caret"></b>
-      </a>
-      <ul class="dropdown-menu">
-        <li>
-          <%= link_to "Log out", logout_path, method: "delete" %>
+        <li> <a href= "https://twitter.com/manhtran0811">
+          <img src="images/tw.png" alt="tw Icon" style="width:30px;height:30px"></a>
         </li>
       </ul>
-    </li>
-    <% else %>
-    <li><%= link_to "Log in", login_path %></li>
-    <% end %>
-  </ul>
 
-</div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <% if logged_in? %>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            Manh Tran <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <%= link_to "Log out", logout_path, method: "delete" %>
+            </li>
+          </ul>
+        </li>
+        <% else %>
+        <li><%= link_to "Log in", login_path %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 </header>
 
-<div id="sig"> <center>
-  <img src="images/sig.png" alt="sig Icon" style="height:160px ">
+<div class="signature"> <center>
+  <img src="images/sig.png" class="img-responsive" alt="sig Icon">
 </center>
 </div> 
+</div>

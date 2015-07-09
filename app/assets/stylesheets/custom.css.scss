@@ -25,10 +25,7 @@ html, body {
 
 }
 
-#body{
- // background-color: red;
-    padding-bottom: 60px;    /* height of footer */
-}
+
 
 
 section {
@@ -71,41 +68,6 @@ margin-top: 5px;
 #logo:hover {
   color: #fff;
   text-decoration: none;
-}
-
-/* footer */
-
-footer {
-  //  position: fixed;
-  width: 100%;
-  position: absolute;
-  left: 0;
-
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
-  a {
-    color: #555;
-    &:hover {
-      color: #222;
-    }
-  }
-  small {
-    float: left;
-    margin-left: 100px;
-    margin-top: 8px;
-  }
-  ul {
-    float: right;
-        margin-right: 100px;
-
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
-  }
 }
 
 
