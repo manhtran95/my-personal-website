@@ -1,38 +1,39 @@
-<%= form_for @article do |f| %>
+<div class="row new-article-form" style="margin-bottom:2em">
+  <div class="col-md-12 col-md-offset-0">
+    <%= form_for @article do |f| %>
 
-<% if @article.errors.any? %>
-<div id="error_explanation">
-  <h2>
-    <%= pluralize(@article.errors.count, "error") %> prohibited
-    this article from being saved:
-  </h2>
-  <ul>
-    <% @article.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
+    <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@article.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
     <% end %>
-  </ul>
-</div>
-<% end %>
+    
+    <div class="row">
+      <%= f.label :"title", style: 'margin-bottom:1em' %>
+      <%= f.text_field :title, class: 'form-control' %>
 
-<div id="containerN">
-  <div id="titleN">
-    <%= f.label :title %><br><br>
-    <%= f.text_field :title %>
-  </div>
+      <div class="text_area" style="margin-bottom: 2em">
+        <%= f.label :text, :style=>'margin-bottom: 1em' %>
+        <%= f.text_area :text, :class=> 'text_area', class: 'form-control', :class => 'ckeditor', size: ""  %>
+      </div>
 
-  <div id="textN" class="text_area">
-    <%= f.label :text %><br><br>
-    <%= f.text_area :text, :class=> 'text_area', :class => 'ckeditor', size: "60x12"  %>
-  </div>
+      <% if current_page?(:controller => 'articles', :action => 'new') %>
+      <%= f.submit :"Create Article", class: "btn btn-primary" %>
+      <% else %>
+      <%= f.submit :"Update Article", class: "btn btn-primary" %>
+      <% end %>
+    </div>
 
-
-  <div id="createN">
-    <% if current_page?(:controller => 'articles', :action => 'new') %>
-    <%= f.submit :"Create Note" %>
-    <% else %>
-    <%= f.submit :"Update Note" %>
     <% end %>
   </div>
 </div>
 
-<% end %>
+

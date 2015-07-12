@@ -15,8 +15,19 @@
       margin-right: auto;   
     }
     .title{
-            color: #A52A2A;
+      color: #A52A2A;
 
+    }
+    .all-articles-link {
+      background-color: whitesmoke;
+      padding: 0.375em;
+      text-align: center;
+      width: 10em;
+      float: right;
+    }
+    label{
+      font-size: 1.2em;
+      color: brown;
     }
   }
 

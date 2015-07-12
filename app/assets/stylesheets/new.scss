@@ -1,45 +1,18 @@
-#note {
-	color: brown;
-	margin: 50px;
-}
 
-#titleN {
-	input {
-		width: 400px;
-		line-height: 2;
 
+// #containerN {
+// 	textarea {
+// 		width: 800px;
+// 		line-height: 1.4;
+
+// 	}
+// 	font-size: 1.2em;
+// 	line-height: 0.8;
+
+// }
+
+.new-article-form{
+	.form-control{
+		width: 50%;
 	}
-	margin-top: 30px;
-	margin-bottom: 20px;
-	text-align: left;
-	line-height: 0.8;
-
-}
-
-#containerN {
-	textarea {
-		width: 800px;
-		line-height: 1.4;
-
-	}
-	font-size: 1.2em;
-	line-height: 0.8;
-
-}
-
-#createN {
-	line-height: 1.4;
-	margin-top: 15px;
-
-}
-
-#all_articles_bottomN {
-		//border: 1px solid lightgrey;
-		font-size: 120%;
-		background-color: whitesmoke;
-		padding: 7px;
-		display: inline-block;
-	//float: right;
-	margin-top: 30px;
-	margin-bottom: 30px;
 }
