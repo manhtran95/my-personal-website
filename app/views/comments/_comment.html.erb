@@ -1,27 +1,27 @@
 
-<div id="comment_container">
-
-	<div id="comment">
-		<%= comment.body %>
+<div class="row">
+	<div class="col-md-10 comment-container" style="margin-bottom:1.5em">
+		<div class="row">
+			<div class="col-md-12" style="margin-bottom: 0.5em;">
+				<%= comment.body %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<strong><%= comment.commenter %></strong>
+			</div>
+		</div>
 	</div>
-
-	<div id="commenter">
-		<strong> <%= comment.commenter %> </strong>
+	<% if session[:log_in]==true %>
+	<div class="col-md-2">
+		<div id="delete_comment"> 
+			<%= link_to [comment.article, comment], method: :delete, data: {confirm: 'Are you sure?'} do %>
+			<%= image_tag("delete.png", size: "25x25") %>
+			<% end %>
+		</div>
 	</div>
-	<!-- <div style="clear:both"></div> -->
-
+	<% end %>	
 </div>
 
-<% if session[:log_in]==true %>
-
-<div id="delete_comment"> 
-	<%= link_to [comment.article, comment], method: :delete, data: {confirm: 'Are you sure?'} do %>
-	<%= image_tag("delete2.png", size: "25x25") %>
-	<% end %>
-</div>
-<% end %>
 
 
-
-<div id="seperator">     
-</div>

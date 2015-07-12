@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Blog</title>
+  <title>My Blog</title>
   <%= stylesheet_link_tag "application", media: "all",
   "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -13,15 +13,13 @@
 </head>
 
 <body>
-  <div id="holder">
-    <%= render 'layouts/header' %>
-    <div class="container" id="body">
-      <% flash.each do |message_type, message| %>
-      <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
-      <%= yield %>
-      <%= render 'layouts/footer' %>
-    </div>
+  <%= render 'layouts/header' %>
+  <div class="container">
+    <% flash.each do |message_type, message| %>
+    <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
   </div>
 
 </body>

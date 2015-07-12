@@ -1,43 +1,53 @@
-
-<div id="containerS">
-	<center>
-		<div id="title_container">
-			<h1 id="titleS">
-				<strong> 
-					<%= @article.title %>
-				</strong>
-			</h1>
-
-			<% if session[:log_in]==true %>
+<div class="app show">
+	<div class="row" style="margin-top:2em; margin-bottom:0.5em">
+		<% if session[:log_in]==true %>
+		<h1 class="col-md-11 title" >
+			<strong><%= @article.title %></strong>
+		</h1>
+		<div class="col-md-1 edit-button">
 			<a href= "<%= edit_article_path(@article) %>">
-				<div id="editS">
-					<img src="images/edit.png" alt="Edit Icon" style="width:30px;height:30px">
-				</div>
+				<img src="images/edit.png" alt="Edit Icon" style="width:30px;height:30px">
 			</a>
-			<% end %>
 		</div>
-	</center>
+		<% else %>
+		<h1 class="col-md-12 title" >
+			<strong><%= @article.title %></strong>
+		</h1>
+		<% end %>
+	</div>
 
-	<p id="bodyS">
-<!-- 
-		<div id="figure">
-			<img src="/fb.jpg" alt="Test Icon" style="width:100px;height:100px">
-		</div> -->
-
-		<p id="textS">
+	<div class="row">
+		<div class="col-md-12 body">	
 			<%= @article.text.html_safe %>
-		</p>
-	</p>
+		</div>
+	</div>
 
-	<h2 id="all_comments">All Comments</h2>
-	<h3 id="all_articles">
-		<%= link_to 'back to All Notes', articles_path %>
-	</h3>
-	<%= render @article.comments %>
+	<div class="row" style="margin-bottom:2em">
+		<div class="col-md-3">
+			<h3 class="comment-marker">All Comments</h3>
+		</div>
+		<div class="col-md-3 col-md-offset-6">
+			<h3 class="all-notes-link">
+				<%= link_to 'back to All Notes', articles_path %>
+			</h3>
+		</div>
+	</div>
 
-	<%= render 'comments/form' %>
+	<div class="row">
+		<div class="col-md-12">
+			<%= render @article.comments %>
+		</div>
+	</div>
 
-	<h3 id="all_articles_bottom">
-		<%= link_to 'back to All Notes', articles_path %>
-	</h3>
+	<div class="row">
+		<%= render 'comments/form' %>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-3">
+			<h3 class="all-notes-link">
+				<%= link_to 'back to All Notes', articles_path %>
+			</h3>
+		</div>
+	</div>
 </div>

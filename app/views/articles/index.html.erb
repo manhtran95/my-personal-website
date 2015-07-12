@@ -1,5 +1,5 @@
 
-<div class="main-center">
+<div class="app main-center">
   <% if session[:log_in]==true %>
   <div class="row">
     <div class="col-md-6 col-md-offset-3 new-note">
@@ -25,7 +25,7 @@
         <div class="col-md-1 col-sm-2 col-xs-3 functions">
           <div class="delete-button"> 
             <%= link_to article_path(article), method: :delete, data: {confirm: 'Are you sure?'} do %>
-            <%= image_tag("delete2.png", size: "20x20") %>
+            <%= image_tag("delete.png", size: "20x20") %>
             <% end %>
           </div>
           <a href= "<%= edit_article_path(article) %>">
