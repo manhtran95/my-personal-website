@@ -1,0 +1,92 @@
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Header
+.header {
+	.navbar {
+		height: 60px;
+		border-bottom: 2.5px solid lightgray;
+		background-color: white;
+		.container {
+			height: 58px;
+			.navbar-left {
+				margin-top: 5px;
+				li a {
+					margin-right: 18px;
+					padding-left: 0px;
+					padding-right: 5px;
+					padding-top: 10px;
+				} 
+				.img{
+					height: 30px;
+					width: 30px;
+					background-size: 30px 30px;
+				}
+				.gm{
+					background-image: image-url('gm.png');
+				}
+				.tw{
+					background-image: image-url('tw.png');
+				}
+				.fb{
+					background-image: image-url('fb.png');
+				}
+			}
+			.navbar-right {
+				margin-top: 0.75em; 
+				li a {
+					margin-left: 1.5em;
+					margin-top:  0.75em;
+					padding: 0; 
+					&:hover {
+						color: #000;
+					}
+					&:focus {
+						color: #000;
+					}
+				}
+				.dropdown-menu {
+					min-width: 0;
+					li {
+						margin-bottom: 0;
+						a {
+							margin: 0;
+							padding: 0.25em 1.2em 0.25em 1.2em;
+						}
+					}
+				}
+				.dropdown-toggle {
+					height: 37px;
+				}
+				.open .dropdown-toggle {
+					background: #FFF; 
+					color: #000;
+				}
+			}
+		}
+	}
+
+	.sig-img{
+		height: 170px;
+		background-image: image-url('sig.png');
+		border-bottom: 2px solid lightgrey;
+	}
+}
+
+.footer {
+	.row{
+		margin-top: 1.25em;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 0.75em;
+		padding-bottom: 0.75em;
+		border-top: 1px solid #eaeaea;
+		a {
+			color: #555;
+			&:hover {
+				color: #222;
+			}
+		}
+	}
+}
+
