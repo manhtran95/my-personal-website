@@ -6,7 +6,6 @@
 
   html, body {
     padding-top: 2.75em;
-
   }
 
   .app {
@@ -23,7 +22,6 @@
       padding: 0.375em;
       text-align: center;
       width: 10em;
-      float: right;
     }
     label{
       font-size: 1.2em;
@@ -45,19 +43,6 @@
   textarea {
     resize: vertical;
   }
-
-
-
-
-  .center {
-    text-align: center;
-  }
-
-  .center h1 {
-    margin-bottom: 10px;
-  }
-
-
 
 
   /* typography */
@@ -99,8 +84,6 @@
     color: red;
     background-color: lavender;
     padding-left: 30px;
-    margin-right: 12px;
-    margin-left: 14px;
   }
 
   .field_with_errors {
