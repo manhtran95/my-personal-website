@@ -1,25 +1,46 @@
 General Information
+
 My personal blog.
+
 It consists of my articles as well as other information.
+
 Framework: Ruby on Rails
 
+
 Getting started
+
 You need to have some prerequisites installed:
+
 The Ruby language version 1.9.3 or newer.
+
 The RubyGems packaging system, which is installed with Ruby versions 1.9 and later.
+
 A working installation of the SQLite3 Database.
+
 Install Rails: gem install rails
 
+
+
 Installation
+
 Now you can clone the project to your PC
+
 https://github.com/manhtrangh/blog.git
 
+
 Rails setup
+
 Install the gems in the directory:
+
 bundle install
+
 create a database.yml file
+
 You may want to precompile the assets files
+
 rake assets:precompile
 
+
 Then you can start the rails server
+
 rails s
