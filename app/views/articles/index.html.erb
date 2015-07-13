@@ -19,9 +19,11 @@
       <div class="row">
 
         <% if session[:log_in]==true %>
-        <a class=" col-md-11 col-sm-10 col-xs-9 title"   href= "<%=article_path(article) %>">
-          <%= article.title %>
-        </a>
+        <div class=" col-md-11 col-sm-10 col-xs-9">
+          <a  class="title"   href= "<%=article_path(article) %>">
+            <%= article.title %>
+          </a>
+        </div>
         <div class="col-md-1 col-sm-2 col-xs-3 functions">
           <div class="delete-button"> 
             <%= link_to article_path(article), method: :delete, data: {confirm: 'Are you sure?'} do %>
@@ -36,9 +38,11 @@
         </div>
 
         <% else %>
-        <a class="col-md-12 col-sm-12 col-xs-12 title"   href= "<%=article_path(article) %>">
-          <%= article.title %>
-        </a>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a href= "<%=article_path(article) %>" class="title">
+            <%= article.title %>
+          </a>
+        </div>
         <% end %>
 
       </div>
