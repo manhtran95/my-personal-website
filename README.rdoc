@@ -1,28 +1,46 @@
-== README
+General Information
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My personal blog.
 
-Things you may want to cover:
+It consists of my articles as well as other information.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Framework: Ruby on Rails
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Getting started
+
+You need to have some prerequisites installed:
+
+The Ruby language version 1.9.3 or newer.
+
+The RubyGems packaging system, which is installed with Ruby versions 1.9 and later.
+
+A working installation of the SQLite3 Database.
+
+Install Rails: gem install rails
+
+
+
+Installation
+
+Now you can clone the project to your PC
+
+https://github.com/manhtrangh/blog.git
+
+
+Rails setup
+
+Install the gems in the directory:
+
+bundle install
+
+create a database.yml file
+
+You may want to precompile the assets files
+
+rake assets:precompile
+
+
+Then you can start the rails server
+
+rails s
