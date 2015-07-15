@@ -1,7 +1,8 @@
 <div class="row"  style="margin-bottom:2em">
   <div class="new-comment-form">
     <div class="col-md-9">
-      <%= form_for([@article, @article.comments.build]) do |f| %>
+      <%= form_for( [@article, @article.comments.build], :html => {:name => "commentForm", :onsubmit => "return validateForm();"} ) do |f| %>
+      <% @comment = @article.comments.build %>
 
       <%= f.label :"Your comment" %>
       <%= f.text_area :body, class: 'form-control' %>
