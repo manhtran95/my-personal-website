@@ -66,10 +66,42 @@
 		}
 	}
 
+	.container-img{
+		overflow: hidden;
+	}
+	.sig-img-ani{
+		height : 170px;
+		position: relative;
+		background: image-url("sig.png") center;
+		// border: 2px solid blue ;
+
+	}
 	.sig-img{
 		height: 170px;
-		background-image: image-url('sig.png');
-		border-bottom: 2px solid lightgrey;
+		position: relative;
+		background: image-url('sig.png') center;
+		// border: 2px solid lightgrey;
+
+	}
+	.imgAni1{
+	animation: first 8s linear infinite;
+	@keyframes first {
+		from   {left:970px;}
+		to   {left:970px;}
+	}
+}
+.imgAni2{
+	animation: second 8s linear infinite;
+	@keyframes second {
+		from   {left:-970px;}
+		to   {left:0px;}
+	}
+}
+
+	.line{
+		padding-top: 2.5px;
+		width: 940px;
+		background-color: lightgray;
 	}
 }
 
