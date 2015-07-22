@@ -1,0 +1,1 @@
+function changeText(){var e=$(".welcome-message")[0];e.innerText="Hi there!"}function changeBack(){var e=$(".welcome-message")[0];e.innerText="Warmest welcome to my personal blog!"}
