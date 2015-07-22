@@ -21,7 +21,7 @@ class ArticlesController < ApplicationController
 
   def create
   	@article = Article.new(article_params)
-  	@article.description = @article.text[0..200].gsub(/\s\w+\s*$/,'...')
+  	@article.description = @article.text[0..1000].gsub(/\s\w+\s*$/,'...')
 
   	if @article.save
   		redirect_to articles_path

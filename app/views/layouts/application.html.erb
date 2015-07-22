@@ -17,21 +17,23 @@
     <div class="alert alert-<%= message_type %>"><%= message %></div>
     <% end %>
     <%= yield %>
+
     <%= render 'layouts/footer' %>
   </div>
 
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= javascript_include_tag '/javascript/ckeditor/ckeditor.js' %>
-  <script type="text/javascript">$(document).ready(function() {
-  if ($('.text_area').length > 0) {
-    var data = $('textarea');
-    $.each(data, function(i) {
-      CKEDITOR.replace(data[i].id);
-      CKEDITOR.basePath = '/assets/ckeditor/';
-    });
-  }
-});</script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+  <script type="text/javascript">$(document).ready(function() {
+    if ($('.text_area').length > 0) {
+      var data = $('textarea');
+      $.each(data, function(i) {
+        CKEDITOR.replace(data[i].id);
+        CKEDITOR.basePath = '/assets/ckeditor/';
+      });
+    }
+  });</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
 </body>
 </html>
