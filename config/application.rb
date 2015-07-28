@@ -24,7 +24,8 @@ module Blog
     config.active_record.raise_in_transactional_callbacks = true
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
     config.assets.initialize_on_precompile = false
-
+config.assets.enabled = true
+    # config.assets.paths << "#{Rails.root}/app/assets/videos"
     #mount Ckeditor::Engine => "/ckeditor"
   end
 end

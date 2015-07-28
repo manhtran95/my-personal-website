@@ -21,7 +21,6 @@ class ArticlesController < ApplicationController
 
   def create
   	@article = Article.new(article_params)
-  	@article.description = @article.text[0..1000].gsub(/\s\w+\s*$/,'...')
 
   	if @article.save
   		redirect_to articles_path
@@ -32,7 +31,6 @@ class ArticlesController < ApplicationController
 
   def update
   	@article = Article.find(params[:id])
-  	@article.description = article_params[:text][0..200].gsub(/\s\w+\s*$/,'...')
 
   	if @article.update(article_params)
   		redirect_to @article
@@ -50,7 +48,7 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-  	params.require(:article).permit(:title, :text)
+  	params.require(:article).permit(:title, :description, :text)
   end
 
 end

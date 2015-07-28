@@ -6,10 +6,20 @@
 $(document).ready(function () {
 	$(".container-welcome-message").on("mouseenter", changeText);
 	$(".container-welcome-message").on("mouseleave", changeBack);
+	$("#write-new-note").on("mouseover", animate);
+	$("#write-new-note").on("mouseout", stopAnimate);
 
-	// $('.figure').each(function() {
-	// 	// $(this).fadeIn(3000);
-	// });
+	$('.figure').fadeIn(3000);
+
+	function animate() {
+		var elem = event.target;
+		elem.className = "btn btn-default btn-lg new-note-animate";
+	}
+
+	function stopAnimate() {
+		var elem = event.target;
+		elem.className = "btn btn-default btn-lg";
+	}
 
 	function changeText() {
 		var elem = $(".welcome-message")[0];

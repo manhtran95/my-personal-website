@@ -15,7 +15,7 @@
     }
     .title{
       color: #A52A2A;
-
+      letter-spacing: normal;
     }
     .all-articles-link {
       background-color: whitesmoke;
@@ -82,9 +82,10 @@
   }
 
   .alert {
+    margin-bottom: 0;
+    padding-left: 30px;
     color: red;
     background-color: lavender;
-    padding-left: 30px;
   }
 
   .field_with_errors {

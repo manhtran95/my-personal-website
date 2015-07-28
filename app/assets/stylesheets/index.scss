@@ -7,7 +7,10 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	button a:hover {
+		text-decoration:none;
 
+	}
 
 	.welcome-message {
 		margin-top:50px;
@@ -26,6 +29,15 @@
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;
 
+	}
+	.new-note-animate{
+		animation: flicker 2s linear infinite;
+		@keyframes flicker {
+
+			0%   {opacity:1};
+			50%   {opacity: 0};
+			100%  {opacity:1};
+		}
 	}
 	.article {
 		border-top: 1.5px solid lightgrey;
@@ -56,7 +68,7 @@
 			margin-top:10px;
 
 		}	
-		.figure {
+		.figure-container {
 			img {
 				border: 3px solid #FFA500;
 			}
@@ -66,10 +78,10 @@
 
 		.text{
 			display: block;
-			height:90px;
-			text-align:-webkit-auto;
+			margin-bottom: 1em;
+			text-align: justify;
 			overflow:hidden;
-
+			word-wrap: break-word;
 		}
 		hr {
 			margin: 2rem 0 1.5rem;

@@ -17,12 +17,17 @@
     <% end %>
     
     <div class="row">
-      <%= f.label :"title", style: 'margin-bottom:1em' %>
-      <%= f.text_field :title, class: 'form-control' %>
+      <%= f.label :title, style: 'margin-bottom:0;   margin-top:1em' %>
+      <div class="note">Less than 100 characters</div>  
+      <%= f.text_field :title, class: 'form-control', maxlength: 100 %>
 
-      <div class="text_area" style="margin-bottom: 2em">
-        <%= f.label :text, :style=>'margin-bottom: 1em' %>
-        <%= f.text_area :text, :class=> 'text_area', class: 'form-control', :class => 'ckeditor', size: ""  %>
+      <%= f.label :description, style: "margin-bottom:0; margin-top:0.5em"%>
+      <div class="note">Less than 270 characters</div>  
+      <%= f.text_area :description, class: 'form-control description', :maxlength => 270 %>
+
+      <div style="margin-bottom: 2em; margin-top:2em">
+        <%= f.label :text, :style=>'margin-bottom: 0.5em' %>
+        <%= f.text_area :text, class: 'form-control text_area', style:'margin-bottom: 2em'%>
       </div>
 
       <% if current_page?(:controller => 'articles', :action => 'new') %>

@@ -3,7 +3,10 @@
   <% if session[:log_in]==true %>
   <div class="row">
     <div class="col-md-6 col-md-offset-3 new-note">
-      <%= link_to 'Write a new note', new_article_path %>
+
+      <a href= "<%= new_article_path %>" id= 'write-new-note'>
+      <button type="button" class="btn btn-default btn-lg" style="background-color: #E6E6FA">Write a new article</button>
+      </a>
     </div>
   </div>
 
@@ -14,6 +17,14 @@
     </div>
   </div>
   <% end %>
+
+<iframe width="640" height="390" src="https://www.youtube.com/embed/pUa29FnQdqY?autohide=1" frameborder="0" allowfullscreen ></iframe>
+
+
+<video width="400" controls>
+  <source src="test.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
   <div class="row articles text-center">
     <% @articles.each do |article| %> 
@@ -49,9 +60,9 @@
 
       </div>
 
-      <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-3 figure">
-          <center><img src="images/fb.jpg" class="img-responsive" id="figure" alt="Test Icon" style="width:110px;height:110px"></img></center>
+      <div class="row" style="height:110px">
+        <div class="col-md-3 col-sm-3 col-xs-3 figure-container" >
+          <center><img src="images/fb.jpg" class="img-responsive figure" id="figure" alt="Test Icon" style="width:110px;height:110px; display:none"></img></center>
         </div> 
         <div class="col-md-9 col-sm-9 col-xs-9" >
           <div class="row">

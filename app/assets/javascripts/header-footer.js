@@ -36,7 +36,10 @@ $(document).ready(function () {
 			degrees = -1;
 		}
 	}
-
+function changeBack() {
+		var elem = $(".welcome-message")[0];
+		elem.innerText = "Warmest welcome to my personal blog!";
+	}
 
 	function stopRotateAnimation(event){
 		var elem = event.target;
