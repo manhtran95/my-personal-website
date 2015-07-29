@@ -3,9 +3,10 @@ Rails.application.routes.draw do
 
 
    mount Ckeditor::Engine => '/ckeditor'
-  root             'articles#index'
+  root             'static_pages#home'
   get 'about'   => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
+  get 'videos'   => 'static_pages#videos'
 
 
   resources :articles do

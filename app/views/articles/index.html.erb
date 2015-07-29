@@ -1,5 +1,5 @@
 
-<div class="app main-center">
+<div class="app index">
   <% if session[:log_in]==true %>
   <div class="row">
     <div class="col-md-6 col-md-offset-3 new-note">
@@ -17,14 +17,6 @@
     </div>
   </div>
   <% end %>
-
-<iframe width="640" height="390" src="https://www.youtube.com/embed/pUa29FnQdqY?autohide=1" frameborder="0" allowfullscreen ></iframe>
-
-
-<video width="400" controls>
-  <source src="test.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
 
   <div class="row articles text-center">
     <% @articles.each do |article| %> 

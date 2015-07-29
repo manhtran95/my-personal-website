@@ -1,0 +1,67 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home {
+	.row {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	button a:hover {
+		text-decoration:none;
+
+	}
+
+	.welcome-message {
+		margin-top:50px;
+		margin-bottom:50px;
+		color:#FFA500;
+		font-size: 2em;
+		font-style:italic;
+		font-family: Georgia, serif;
+		text-align:center;
+		word-spacing: 2px;
+		letter-spacing: 0.2px;
+	}
+
+	.articles{
+		border-top: 1.5px solid lightgrey;
+
+	}
+
+	.my-articles{
+		margin-top: 1em;
+				margin-bottom: 1em;
+	}
+	.article {
+		padding-right: 2em;
+		padding-left: 2em;
+
+		.title-container{
+			min-height: 3em;
+			margin-bottom:1em;
+			padding-right: 0;
+			padding-left: 0;
+		}
+		.title{
+			font-size:110%;
+		}
+		
+		.figure-container {
+	
+			float:left;
+			padding-right: 1.25em;
+		}
+
+		.text{
+			text-align: justify;
+			word-wrap: break-word;
+		}
+
+	}
+	.view-more-article {
+			margin-top: 2em;
+			margin-bottom: 2em;
+
+		}
+}

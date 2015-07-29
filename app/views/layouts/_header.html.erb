@@ -1,5 +1,6 @@
   <div class="app header">
-    <header class="navbar navbar-fixed-top navbar-inverse">
+  <!-- navbar-fixed-top -->
+    <header class="navbar  navbar-inverse">
       <div class="container">
        <div class="navbar-header">
         <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target=".navbar-collapse" style="background-color:#D3D3D3; ">
@@ -27,6 +28,9 @@
 
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Home", root_path %></li>
+                    <li><%= link_to "Articles", articles_path %></li>
+                    <li><%= link_to "Videos", videos_path %></li>
+
           <li><%= link_to "About", about_path %></li>
           <% if logged_in? %>
           <li class="dropdown">

@@ -3,6 +3,9 @@
 
 // Header
 .header {
+	.navbar-inverse{
+		border-color: white;
+	}
 	.navbar {
 		height: 60px;
 		border-bottom: 2.5px solid lightgray;
@@ -99,7 +102,6 @@
 
 .footer {
 	.row{
-		margin-top: 1.25em;
 		margin-left: auto;
 		margin-right: auto;
 		padding-top: 0.75em;

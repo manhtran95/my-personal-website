@@ -24,11 +24,13 @@ $(document).ready(function () {
 	function changeText() {
 		var elem = $(".welcome-message")[0];
 		elem.innerText = "Hi there!";
+		elem.style.color = "#0000FF";
 	}
 
 	function changeBack() {
 		var elem = $(".welcome-message")[0];
 		elem.innerText = "Warmest welcome to my personal blog!";
+		elem.style.color = "#FFA500";
 	}
 });
 
