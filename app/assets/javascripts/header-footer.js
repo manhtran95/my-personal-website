@@ -1,17 +1,16 @@
 $(document).ready(function () {
-	$("#fbimg,#twimg").on("mouseover",  rotateRightAnimation);
-	$("#gmimg").on("mouseover",  rotateLeftAnimation);
-	$("#fbimg,#twimg, #gmimg").on("mouseout",  stopRotateAnimation);
+	// $("#fbimg,#twimg, #gmimg").on("mouseover",  rotateRightAnimation);
+	// $("#fbimg,#twimg, #gmimg").on("mouseout",  stopRotateAnimation);
 
-	$('.container-img').click(function() {
-		var clicks = $(this).data('clicks');
-		if (!clicks) {
-			animation();
-		} else {
-			stopAnimation();
-		}
-		$(this).data("clicks", !clicks);
-	});
+	// $('.container-img').click(function() {
+	// 	var clicks = $(this).data('clicks');
+	// 	if (!clicks) {
+	// 		animation();
+	// 	} else {
+	// 		stopAnimation();
+	// 	}
+	// 	$(this).data("clicks", !clicks);
+	// });
 
 	var looper;
 	var degrees = 0;
@@ -26,16 +25,6 @@ $(document).ready(function () {
 		}
 	}
 
-	function rotateLeftAnimation(event){
-		var speed = 30;
-		var elem = event.target;
-		elem.style.transform = "rotate("+degrees+"deg)";
-		looper = setTimeout(rotateLeftAnimation,speed, event);
-		degrees--;
-		if(degrees < -359){
-			degrees = -1;
-		}
-	}
 function changeBack() {
 		var elem = $(".welcome-message")[0];
 		elem.innerText = "Warmest welcome to my personal blog!";

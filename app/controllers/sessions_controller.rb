@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
 
    if ( (params[:session][:email]=="a@a.a") and (params[:session][:password]=="a") )         
      session[:log_in] = true     
-     flash[:success] = 'Successful login'
+     # flash[:success] = 'Successful login'
      redirect_to root_url
    else
     flash.now[:danger] = 'Invalid email/password combination'

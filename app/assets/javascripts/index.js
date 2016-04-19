@@ -4,12 +4,11 @@
 
 
 $(document).ready(function () {
-	$(".container-welcome-message").on("mouseenter", changeText);
-	$(".container-welcome-message").on("mouseleave", changeBack);
+
 	$("#write-new-note").on("mouseover", animate);
 	$("#write-new-note").on("mouseout", stopAnimate);
 
-	$('.figure').fadeIn(3000);
+	$('.fade-in').fadeIn(3000);
 
 	function animate() {
 		var elem = event.target;

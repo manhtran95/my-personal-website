@@ -16,9 +16,15 @@
 		<% end %>
 	</div>
 
+	<div class="row">
+	<div class="col-md-12">
+	<%= image_tag @article.photo.url(:big) %>
+	</div>
+	</div>
+
 	<div class="row" style="margin-bottom:3em">
 		<div class="col-md-12 body">	
-			<%= @article.text.html_safe %>
+			<%= @article.body.html_safe %>
 		</div>
 	</div>
 

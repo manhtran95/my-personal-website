@@ -5,73 +5,76 @@
     <div class="col-md-6 col-md-offset-3 new-note">
 
       <a href= "<%= new_article_path %>" id= 'write-new-note'>
-      <button type="button" class="btn btn-default btn-lg" style="background-color: #E6E6FA">Write a new article</button>
+        <button type="button" class="btn btn-default btn-lg" style="background-color: #E6E6FA">Write a new article</button>
       </a>
     </div>
   </div>
-
   <% else %>
   <div class="row">
-    <div class="col-md-12 container-welcome-message"> 
-      <center><h1 class="welcome-message">Warmest welcome to my personal blog!</h1></center>
-    </div>
-  </div>
-  <% end %>
+   <div class="col-md-12"> 
+     <center><h1 class="header">My favourite articles</h1></center>
+   </div>
+ </div>
 
-  <div class="row articles text-center">
-    <% @articles.each do |article| %> 
-    <div class="col-md-10 col-md-offset-1 article">
+ <% end %>
+
+ <div class="row articles text-center">
+  <% @articles.each do |article| %> 
+  <div class="col-md-10 col-md-offset-1 article">
+    <div class="row">
+
+      <% if session[:log_in]==true %>
+      <div class=" col-md-11 col-sm-10 col-xs-9">
+        <a  class="title"   href= "<%=article_path(article) %>">
+          <%= article.title %>
+        </a>
+      </div>
+      <div class="col-md-1 col-sm-2 col-xs-3 functions">
+        <div class="delete-button"> 
+          <%= link_to article_path(article), method: :delete, data: {confirm: 'Are you sure?'} do %>
+          <%= image_tag("delete.png", size: "20x20") %>
+          <% end %>
+        </div>
+        <a href= "<%= edit_article_path(article) %>">
+          <div class="edit-button">
+            <img src="images/edit.png" alt="Edit Icon" style="width:20px;height:20px">
+          </div>
+        </a>
+      </div>
+
+      <% else %>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <a href= "<%=article_path(article) %>" class="title">
+          <%= article.title %>
+        </a>
+      </div>
+      <% end %>
+
+    </div>
+
+    <div class="row" style="height:110px">
+    <div class="col-md-3 col-sm-3 col-xs-3 figure-container" >
+       <center><div class="img-responsive fade-in" id="figure" style="width:110px;height:110px; display:none">
+        <%= image_tag article.photo.url(:small) %>
+      </div></center> 
+    </div>
+    <div class="col-md-9 col-sm-9 col-xs-9" >
       <div class="row">
-
-        <% if session[:log_in]==true %>
-        <div class=" col-md-11 col-sm-10 col-xs-9">
-          <a  class="title"   href= "<%=article_path(article) %>">
-            <%= article.title %>
-          </a>
+        <div class="col-md-12 text">
+          <%= article.description %>
         </div>
-        <div class="col-md-1 col-sm-2 col-xs-3 functions">
-          <div class="delete-button"> 
-            <%= link_to article_path(article), method: :delete, data: {confirm: 'Are you sure?'} do %>
-            <%= image_tag("delete.png", size: "20x20") %>
-            <% end %>
-          </div>
-          <a href= "<%= edit_article_path(article) %>">
-            <div class="edit-button">
-              <img src="images/edit.png" alt="Edit Icon" style="width:20px;height:20px">
-            </div>
-          </a>
-        </div>
-
-        <% else %>
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <a href= "<%=article_path(article) %>" class="title">
-            <%= article.title %>
-          </a>
-        </div>
-        <% end %>
-
       </div>
-
-      <div class="row" style="height:110px">
-        <div class="col-md-3 col-sm-3 col-xs-3 figure-container" >
-          <center><img src="images/fb.jpg" class="img-responsive figure" id="figure" alt="Test Icon" style="width:110px;height:110px; display:none"></img></center>
-        </div> 
-        <div class="col-md-9 col-sm-9 col-xs-9" >
-          <div class="row">
-            <div class="col-md-12 text">
-              <%= article.description.html_safe %>
-            </div>
-          </div>
-          <div class="row">
-            <a href= "<%=article_path(article) %>"  class="col-md-5">
-              Continue Reading...
-            </a>
-          </div>
-        </div> 
+      <div class="row">
+        <a href= "<%=article_path(article) %>"  class="col-md-5 continue-reading">
+          Continue Reading...
+        </a>
       </div>
-      <hr>
-    </div>
-    <% end %>
+    </div> 
   </div>
+  <hr>
+</div>
+<% end %>
+</div>
 </div>
 
+<!--      <center><img src="images/fb.jpg" class="img-responsive figure" id="figure" alt="Test Icon" style="width:110px;height:110px; display:none"></img></center> -->

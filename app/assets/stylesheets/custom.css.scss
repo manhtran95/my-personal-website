@@ -4,14 +4,28 @@
   /* universal */
 
 
+#body-content {
+  // background-color: grey;
+}
 
   .app {
     .row {
       margin-left: auto;
       margin-right: auto;   
     }
+    .header {
+    margin-top:50px;
+    margin-bottom:50px;
+    color:#000066;
+    font-size: 2em;
+    font-style:italic;
+    font-family: Georgia, serif;
+    text-align:center;
+    word-spacing: 2px;
+    letter-spacing: 0.2px;
+  }
     .title{
-      color: #A52A2A;
+      color: #47d17c;
       letter-spacing: normal;
     }
     .all-articles-link {
@@ -22,7 +36,7 @@
     }
     label{
       font-size: 1.2em;
-      color: brown;
+      color: #000066;
     }
   }
 
@@ -84,6 +98,11 @@
     padding-left: 30px;
     color: red;
     background-color: lavender;
+  }
+
+  .btn-primary{
+    background-color: #003366;
+    margin-top: 0.15em;
   }
 
   .field_with_errors {

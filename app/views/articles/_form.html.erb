@@ -1,6 +1,6 @@
 <div class="row new-article-form" style="margin-bottom:2em">
   <div class="col-md-12 col-md-offset-0">
-    <%= form_for @article do |f| %>
+    <%= form_for @article, :html => { :multipart => true } do |f| %>
 
     <% if @article.errors.any? %>
     <div id="error_explanation">
@@ -26,9 +26,12 @@
       <%= f.text_area :description, class: 'form-control description', :maxlength => 270 %>
 
       <div style="margin-bottom: 2em; margin-top:2em">
-        <%= f.label :text, :style=>'margin-bottom: 0.5em' %>
-        <%= f.text_area :text, class: 'form-control text_area', style:'margin-bottom: 2em'%>
+        <%= f.label :body, :style=>'margin-bottom: 0.5em' %>
+        <%= f.text_area :body, class: 'form-control text_area', style:'margin-bottom: 2em'%>
       </div>
+
+      <%= f.file_field :photo %>
+
 
       <% if current_page?(:controller => 'articles', :action => 'new') %>
       <%= f.submit :"Create Article", class: "btn btn-primary" %>
