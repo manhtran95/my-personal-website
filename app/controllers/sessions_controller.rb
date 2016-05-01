@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def create
 
-   if ( (params[:session][:email]=="a@a.a") and (params[:session][:password]=="a") )         
+   if ( (params[:session][:email]=="a@a.a") and (params[:session][:password]=="a1b2c3^") )         
      session[:log_in] = true     
      # flash[:success] = 'Successful login'
      redirect_to root_url
